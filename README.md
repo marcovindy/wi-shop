@@ -1,1 +1,1 @@
-# wi-shop
+# wi-shop - learing flexbox - by Marek
