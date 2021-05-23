@@ -88,10 +88,6 @@ h1, h2 {
   flex-direction: row;
   justify-content: space-between;
 }
-.navbar .menu .left-container, .navbar .menu .middle-container, .navbar .menu .right-container {
-  display: flex;
-  flex-direction: row;
-}
 .navbar .menu .middle-container {
   padding: 0.3rem 0 0 0;
 }

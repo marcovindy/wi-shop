@@ -1,0 +1,229 @@
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #2f2f2f;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+a:hover {
+  color: #d4a4a4;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Basic Grid
+--------------------------------------------------------------*/
+.container,
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+header {
+  transition: all 0.5s;
+  z-index: 1;
+  padding: 0;
+  position: fixed;
+  margin: 0;
+  background-color: #383838;
+  width: 100%;
+  background: #383838;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-family: "handwriting-aperto";
+}
+header .logo a {
+  color: #000;
+  height: 3rem;
+}
+header .logo img {
+  max-height: 2rem;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.nav-menu .navicon {
+  display: none;
+}
+.nav-menu .navicon .burger {
+  display: flex;
+  cursor: pointer;
+  background: none;
+  transition: all 0.35s ease;
+  width: 100%;
+  height: 1.5rem;
+  margin: 0.8rem 0;
+}
+.nav-menu .navicon .burger .material-icons {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.nav-menu .navicon .burger-close {
+  display: none;
+}
+.nav-menu .navicon .burger.active .burger-open {
+  display: none;
+}
+.nav-menu .navicon .burger.active .burger-close {
+  display: flex;
+}
+.nav-menu .menu {
+  transition: all 0.35s ease;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu .menu ul {
+  list-style: none;
+  display: flex;
+}
+.nav-menu .menu ul li {
+  position: relative;
+  white-space: pre-wrap;
+  font-size: 1rem;
+}
+.nav-menu .menu ul li a {
+  display: block;
+  position: relative;
+  color: #ffffff;
+  transition: 0.3s;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  padding: 1.1rem;
+}
+.nav-menu .menu ul li a:hover {
+  color: #2f2f2f;
+  background: #ffffff;
+}
+.nav-menu .menu ul .menu-icon a {
+  padding: 0.9rem;
+}
+.nav-menu .menu ul .menu-icon a .material-icons {
+  font-size: 1.2rem;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+main {
+  flex: 1 0 auto;
+  padding-top: 3.1rem;
+}
+
+/*--------------------------------------------------------------
+# Tablet
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+  header .logo {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+  }
+  .nav-menu .navicon {
+    display: block;
+    margin: 0 1rem;
+  }
+  .nav-menu .navicon .burger.active {
+    height: 15rem;
+  }
+  .nav-menu .menu.active {
+    margin: auto;
+    align-items: center;
+  }
+  .nav-menu .menu.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu .menu.active .menu-item {
+    display: block;
+  }
+  .nav-menu .menu .menu-item {
+    display: none;
+  }
+  .nav-menu .menu .menu-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+  .nav-menu .menu .menu-icon#menu-icon1 {
+    right: 3rem;
+  }
+  .nav-menu .menu .menu-icon#menu-icon2 {
+    right: 0;
+  }
+}
+/*--------------------------------------------------------------
+# Mobile
+--------------------------------------------------------------*/
