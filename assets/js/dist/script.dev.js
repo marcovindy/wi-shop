@@ -1,17 +1,5 @@
 "use strict";
 
-// Toggle Burger Menu
-var burgerMenu = document.querySelector(".burger");
-var navbarMenu = document.querySelector(".menu");
-burgerMenu.addEventListener("click", function () {
-  navbarMenu.classList.toggle("active");
-  burgerMenu.classList.toggle("active");
-});
-var slideIndex = 1;
-window.addEventListener("load", function () {
-  showSlides(slideIndex);
-}); // Simple Img Slider
-
 var prevSlider = document.querySelector(".prev.slider-btn");
 var nextSlider = document.querySelector(".next.slider-btn");
 prevSlider.addEventListener("click", function () {

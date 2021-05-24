@@ -1,22 +1,3 @@
-// Toggle Burger Menu
-
-const burgerMenu = document.querySelector(".burger");
-const navbarMenu = document.querySelector(".menu");
-
-burgerMenu.addEventListener("click", function () {
-	navbarMenu.classList.toggle("active");
-	burgerMenu.classList.toggle("active");
-});
-
-let slideIndex = 1;
-
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-});
-
-
-// Simple Img Slider
-
 const prevSlider = document.querySelector(".prev.slider-btn");
 const nextSlider = document.querySelector(".next.slider-btn");
 
