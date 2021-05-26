@@ -20,6 +20,9 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="assets/scss/dist/style.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -41,12 +44,14 @@
           </div>
           <div class="menu">
             <ul>
-              <li class="menu-item"><a href="#">Elektronika</a></li>
+              <li class="menu-item"><a href="elektronika.html">Elektronika</a></li>
               <li class="menu-item"><a href="#">Sport</a></li>
-              <li class="menu-item"><a href="#">O nás</a></li>
-              <li class="menu-item"><a href="#">Kontakty</a></li>
+              <li class="menu-item"><a href="#about-us">O nás</a></li>
+              <li class="menu-item"><a href="#contact">Kontakty</a></li>
               <li class="menu-icon" id="menu-icon1">
-                <a data-modal="modal-one" href="#"><i class="material-icons">search</i></a>
+                <a data-modal="modal-one" href="#"
+                  ><i class="material-icons">search</i></a
+                >
               </li>
               <li class="menu-icon" id="menu-icon2">
                 <a href="#"><i class="material-icons">face</i></a>
@@ -76,8 +81,8 @@
           <img src="assets/img/slider/slide3.png" alt="slide3" />
         </div>
 
-        <a class="prev slider-btn topSlider">&#10094;</a>
-        <a class="next slider-btn topSlider">&#10095;</a>
+        <a class="prev slider-btn topSlider"><i class="material-icons">chevron_left</i></a>
+        <a class="next slider-btn topSlider"><i class="material-icons">chevron_right</i></a>
 
         <div class="dots">
           <span class="dot" onclick="currentSlide(1)"></span>
@@ -87,14 +92,16 @@
       </section>
       <!-- End Slider -->
       <!-- Products -->
-      <section id="products">
+      <section class="products" id="products">
         <div class="container">
-          <h2>Produkty</h2>
+          <h2>Elektronika</h2>
           <div class="row">
             <div class="col">
               <div class="card">
                 <div class="card-image d-flex-center">
-                  <a href="#"><img src="assets/img/products/apple.jpg" alt="apple" /></a>
+                  <a href="#"
+                    ><img src="assets/img/products/apple.jpg" alt="apple"
+                  /></a>
                 </div>
                 <div class="card-main">
                   <div class="card-main-title">
@@ -116,14 +123,18 @@
             <div class="col">
               <div class="card">
                 <div class="card-image d-flex-center">
-                  <a href="#"><img src="assets/img/products/tv2.jpg" alt="tv2" /></a>
+                  <a href="#"
+                    ><img src="assets/img/products/tv2.jpg" alt="tv2"
+                  /></a>
                 </div>
                 <div class="card-main">
                   <div class="card-main-title">
-                    <a href="#"><h3>
-                      produkt2 hoooooooooodně strašně moc dlouhej bla nadpis
-                      blaaala bla blaa bla bla
-                    </h3></a>
+                    <a href="#"
+                      ><h3>
+                        produkt2 hoooooooooodně strašně moc dlouhej bla nadpis
+                        blaaala bla blaa bla bla
+                      </h3></a
+                    >
                   </div>
                   <div class="card-main-describtion">
                     <p>
@@ -141,7 +152,9 @@
             <div class="col">
               <div class="card">
                 <div class="card-image d-flex-center">
-                  <a href="#"><img src="assets/img/products/tv3.jpg " alt="tv3" /></a>
+                  <a href="#"
+                    ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                  /></a>
                 </div>
                 <div class="card-main">
                   <div class="card-main-title">
@@ -160,12 +173,136 @@
                 </div>
               </div>
             </div>
-            <a class="prev slider-btn product">&#10094;</a>
-            <a class="next slider-btn product">&#10095;</a>
+            <a class="prev slider-btn product"><i class="material-icons">chevron_left</i></a>
+            <a class="next slider-btn product"><i class="material-icons">chevron_right</i></a>
           </div>
         </div>
       </section>
       <!-- End Products -->
+
+      <!-- About Us -->
+      <section id="about-us">
+        <div class="container">
+          <h2>O nás</h2>
+          <div class="row">
+            <div class="cards">
+              <div class="card-item">
+                <div class="card-image">
+                  <img src="assets/img/about/about1.jpg" alt="sport" />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Lorem ipsum dolor.</h3>
+                  <div class="card-intro">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-item">
+                <div class="card-image">
+                  <img src="assets/img/about/about2.png" alt="sport2" />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Lorem ipsum dolor.</h3>
+                  <div class="card-intro">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-item">
+                <div class="card-image">
+                  <img src="assets/img/about/about3.jpg" alt="coding" />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Lorem ipsum dolor.</h3>
+                  <div class="card-intro">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sequi facilis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us -->
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <h2>Kontakty</h2>
+          <div class="row">
+            <div class="contacts">
+              <div class="name">
+                <h3><i class="material-icons">face</i>Developer</h3>
+                <h4>Vaníček Marek</h4>
+              </div>
+              <div class="phone">
+                <h3><i class="material-icons">phone</i>Telefon</h3>
+                <h4>+420 732 953 891</h4>
+              </div>
+              <div class="phone">
+                <h3><i class="material-icons">mail</i>Email</h3>
+                <h4>marek.vanicek@web-integrator.cz</h4>
+              </div>
+              <div class="facebook">
+                <h3><i class="material-icons">facebook</i>Facebook</h3>
+                <h4><a href="#">odkaz na fb</a></h4>
+              </div>
+            </div>
+            <div class="map">
+              <img src="assets/img/map.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact -->
     </main>
     <!-- End Main -->
 
@@ -199,24 +336,33 @@
     </footer>
     <!-- End Footer -->
     <!-- Modal -->
-    
+
     <div class="modal" id="modal-one">
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container">
         <form role="search" class="search-form form">
           <label>
-              <span class="screen-reader-text">Co chcete hledat...</span>
-              <input type="search" class="search-field" placeholder="Začněte hledat..." value="search" name="s" title="" />
+            <span class="screen-reader-text">Co chcete hledat...</span>
+            <input
+              type="search"
+              class="search-field"
+              placeholder="Začněte hledat..."
+              name="search"
+              title=""
+            />
           </label>
           <button type="submit"><i class="material-icons">search</i></button>
-        </form>  
-        <button class="modal-close modal-exit"><i class="material-icons">close</i></button>
+        </form>
+        <button class="modal-close modal-exit">
+          <i class="material-icons">close</i>
+        </button>
       </div>
-    </div> 
+    </div>
     <!-- End Modal -->
     <!-- JS Scripts -->
     <script src="assets/js/burger.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll.js"></script>
   </body>
 </html>

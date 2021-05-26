@@ -1,3 +1,5 @@
+
+
 const prevSlider = document.querySelector(".prev.slider-btn");
 const nextSlider = document.querySelector(".next.slider-btn");
 
