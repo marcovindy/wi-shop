@@ -1,5 +1,8 @@
 "use strict";
 
+window.addEventListener("load", function () {
+  showSlides(slideIndex);
+});
 var prevSlider = document.querySelector(".prev.slider-btn");
 var nextSlider = document.querySelector(".next.slider-btn");
 prevSlider.addEventListener("click", function () {

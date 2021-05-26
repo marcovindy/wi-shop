@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Wi-shop</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="Marek" name="author" />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="assets/scss/dist/style.css" />
+    <link rel="stylesheet" href="assets/scss/dist/lightslider.css" />
+    <link rel="stylesheet" href="assets/scss/dist/detail.css" />
+
+    <!-- jQuery -->
+    <script src="assets/js/JQuery3.3.1.js"></script>
+    <script src="assets/js/lightslider.js"></script>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto align-items-center">
+          <a href="index.html"><img alt="logo" src="assets/img/logo.png" /></a>
+        </div>
+        <nav class="nav-menu d-none d-lg-block">
+          <div class="navicon">
+            <div class="burger">
+              <span class="burger-open">
+                <i class="material-icons">menu</i>
+              </span>
+              <span class="burger-close align-items-center">
+                <i class="material-icons">close</i>
+              </span>
+            </div>
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="menu-item"><a href="index.html">Elektronika</a></li>
+              <li class="menu-item"><a href="#">Sport</a></li>
+              <li class="menu-item"><a href="index.html#about-us">O nás</a></li>
+              <li class="menu-item">
+                <a href="index.html#contact">Kontakty</a>
+              </li>
+              <li class="menu-icon" id="menu-icon1">
+                <a data-modal="modal-one" href="#"
+                  ><i class="material-icons">search</i></a
+                >
+              </li>
+              <li class="menu-icon" id="menu-icon2">
+                <a href="#"><i class="material-icons">face</i></a>
+              </li>
+              <li class="menu-icon" id="menu-icon3">
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main -->
+    <main>
+      <section id="detail-main-section">
+        <div class="container">
+          <div class="row">
+            <div class="galery">
+              <ul id="lightSlider">
+                <li data-thumb="assets/img/products/tv-th1.jpg">
+                  <img src="assets/img/products/tv-th1.jpg" alt="tv" />
+                </li>
+                <li data-thumb="assets/img/products/tv-th2.jpg">
+                  <img src="assets/img/products/tv-th2.jpg" alt="tv" />
+                </li>
+                <li data-thumb="assets/img/products/tv-th1.jpg">
+                  <img src="assets/img/products/tv-th1.jpg" alt="tv" />
+                </li>
+                <li data-thumb="assets/img/products/tv-th2.jpg">
+                  <img src="assets/img/products/tv-th2.jpg" alt="tv" />
+                </li>
+                <li data-thumb="assets/img/products/tv-th1.jpg">
+                  <img src="assets/img/products/tv-th1.jpg" alt="tv" />
+                </li>
+                <li data-thumb="assets/img/products/tv-th2.jpg">
+                  <img src="assets/img/products/tv-th2.jpg" alt="tv" />
+                </li>
+              </ul>
+            </div>
+            <div class="detail-main-info">
+              <div class="title"><h2>Phillips S500</h2></div>
+              <div class="description">
+                <p class="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores omnis est vel alias recusandae quasi quo
+                  consectetur. Mollitia excepturi inventore reprehenderit nulla
+                  nihil. Quo placeat dolorem, dignissimos inventore nemo optio?
+                </p>
+              </div>
+              <div class="stored">
+                <p>skladem</p>
+              </div>
+              <div class="buy"><button>Koupit</button></div>
+              <div class="guarantee">Záruka</div>
+              <div class="favorite">Oblíbené</div>
+              <div class="comapre">Porovnat</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="detail-more-section">
+        <div class="container">
+          <div class="detail-menu">
+            <nav>
+              <ul>
+                <li id="open-detail-describtion" class="active">Popis</li>
+                <li id="open-detail-param">Parametry</li>
+                <li id="open-detail-media">Media</li>
+                <li id="open-detail-review">Recenze</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="detail-describtion d-flex-center">
+              <div class="container-d">
+                <h2>Popis</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ducimus rem, minus animi deserunt consectetur rerum!
+                  Laboriosam corporis eius nobis nam magnam dignissimos ex sunt,
+                  amet nostrum similique adipisci quibusdam odit. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. A vitae expedita
+                  sapiente officiis dolores nulla reprehenderit fuga facere
+                  rerum! Deserunt perferendis doloribus ipsum enim, at
+                  voluptatem obcaecati ducimus voluptatum eum. Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Incidunt architecto
+                  ducimus fugiat asperiores libero veniam, earum dignissimos
+                  deleniti voluptate. Est velit voluptate veniam blanditiis,
+                  nobis ipsam quaerat eligendi id nihil.
+                </p>
+              </div>
+          </div>
+          <div class="detail-param hide">
+            <div class="d-flex d-flex-col container-d">
+              <h2>Parametry</h2>
+              <div class="detail-param-name">
+                <h3>Název</h3>
+                <p>Philips S500</p>
+              </div>
+              <div class="detail-param-interface">
+                <h3>Rozhraní</h3>
+                <p>DVI-D, VGA, HDMI</p>
+              </div>
+              <div class="detail-param-diagonal">
+                <h3>Úhlopříčka</h3>
+                <p>27"</p>
+              </div>
+              <div class="detail-param-resolution">
+                <h3>Rozlišení</h3>
+                <p>1920x1080</p>
+              </div>
+              <div class="detail-param-ecoclass">
+                <h3>Energetická třída</h3>
+                <p>G</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail-media hide">
+            <h2>Media</h2>
+            <div class="row">
+              <div class="detail-media-photo">
+                <img src="assets/img/slider/slide1.png" alt="detail photo1" />
+                <img src="assets/img/slider/slide2.png" alt="detail photo1" />
+                <img src="assets/img/slider/slide3.png" alt="detail photo1" />
+              </div>
+              <div class="detail-media-video d-flex d-flex-center">
+                <iframe
+                  src="https://www.youtube.com/embed/XtMThy8QKqU"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="detail-review hide">
+            <h2>Recenze</h2>
+            <div class="w-100 d-flex-center">
+            <form>
+              <div class="form-group">
+                <label for="name"> Jméno:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email"> Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Jak hodnotíte nákup?</label>
+                <p>
+                  <label class="radio-inline">
+                    <input type="radio" name="experience" value="bad" />
+                    Bad
+                  </label>
+
+                  <label class="radio-inline">
+                    <input type="radio" name="experience" value="average" />
+                    Average
+                  </label>
+
+                  <label class="radio-inline">
+                    <input type="radio" name="experience" value="good" />
+                    Good
+                  </label>
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="comments"> Zpráva:</label>
+                <textarea
+                  class="form-control"
+                  name="comments"
+                  id="comments"
+                  placeholder="Your Comments"
+                  maxlength="6000"
+                  rows="7"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="checkbox">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    value="checkbox"
+                    id="checkbox"
+                    required
+                  />
+                  Přečetl jsem a sohlasím s podmínkami...</label
+                >
+              </div>
+              <div class="form-group">
+                <button type="submit">Post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="d-flex">
+          <div class="col-left">
+            <a href="#"><img src="assets/img/logo.png" alt="Logo-bottom" /></a>
+          </div>
+          <div class="col-middle-left">
+            <h3>Kategorie</h3>
+            <ul>
+              <li>
+                <a href="elektronika.html"> Elektronika </a>
+              </li>
+              <li>
+                <a href="#"> Sport </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-middle-right">
+            <a href="#about-us"><h3>O nás</h3></a>
+            <a href="#contacts"><h3>Kontakty</h3></a>
+          </div>
+          <div class="col-right">
+            <p>&copy; Copyright. Developed by Marek Vaníček.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Modal -->
+
+    <div class="modal" id="modal-one">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <form role="search" class="search-form form">
+          <label for="search">Co chcete hledat...</label>
+          <div class="search-bar">
+            <input
+              type="search"
+              id="search"
+              class="search-field"
+              placeholder="Začněte hledat..."
+              name="search"
+              title=""
+            />
+
+            <button type="submit"><i class="material-icons">search</i></button>
+          </div>
+        </form>
+        <button class="modal-close modal-exit">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+    </div>
+    <!-- End Modal -->
+    <!-- JS Scripts -->
+    <script src="assets/js/burger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/cardSlider.js"></script>
+    <script src="assets/js/detailMore.js"></script>
+  </body>
+</html>

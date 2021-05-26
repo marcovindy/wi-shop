@@ -1,11 +1,35 @@
- 
-// JavaScript Document
-$(document).ready(function() {
+$(document).ready(function () {
     $('#autoWidth').lightSlider({
-        autoWidth:true,
-        loop:true,
-        onSliderLoad: function() {
+        item: 3,
+        autoWidth: true,
+        loop: true,
+        onSliderLoad: function () {
             $('#autoWidth').removeClass('cS-hidden');
-        } 
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('#autoWidth2').lightSlider({
+        item:3,
+        autoWidth: true,
+        loop: true,
+        onSliderLoad: function () {
+            $('#autoWidth2').removeClass('cS-hidden');
+        }
+    });
+});
+
+
+$(document).ready(function() {
+    $('#lightSlider').lightSlider({
+    gallery: true,
+    autoWidth: false,
+    adaptiveHeight:false,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem:5
     });  
   });

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Marek Vaníček - Web Developer</title>
+    <title>Wi-shop</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <meta content="Marek" name="author" />
@@ -16,11 +16,10 @@
     />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/favicon.ico" rel="icon" />
 
     <!-- CSS File -->
     <link rel="stylesheet" href="assets/scss/dist/style.css" />
-    <!--<link rel="stylesheet" href="assets/scss/dist/cardSlider.css" />-->
     <link rel="stylesheet" href="assets/scss/dist/lightslider.css" />
 
     <!-- jQuery -->
@@ -33,7 +32,7 @@
       
       <div class="container d-flex align-items-center">
         <div class="logo mr-auto align-items-center">
-          <a href="index.php"><img alt="logo" src="assets/img/logo.png" /></a>
+          <a href="index.html"><img alt="logo" src="assets/img/logo.png" /></a>
         </div>
         <nav class="nav-menu d-none d-lg-block">
           <div class="navicon">
@@ -50,8 +49,8 @@
             <ul>
               <li class="menu-item"><a href="#">Elektronika</a></li>
               <li class="menu-item"><a href="#">Sport</a></li>
-              <li class="menu-item"><a href="#about-us">O nás</a></li>
-              <li class="menu-item"><a href="#contact">Kontakty</a></li>
+              <li class="menu-item"><a href="index.html#about-us">O nás</a></li>
+              <li class="menu-item"><a href="index.html#contact">Kontakty</a></li>
               <li class="menu-icon" id="menu-icon1">
                 <a data-modal="modal-one" href="#"
                   ><i class="material-icons">search</i></a
@@ -71,8 +70,8 @@
     <!-- End Header -->
     <!-- Main -->
     <main>
-      <!-- Products -->
-      <section class="products" id="products">
+      <!-- Categories -->
+      <section class="categories" id="categories">
         <div class="container">
           <h2>Elektronika</h2>
           <div class="row">
@@ -80,17 +79,16 @@
           <ul id="autoWidth" class="cs-hidden">
             <!--1------------------------------>
             <li class="item-a">
-              <!--slider-box-->
               <div class="col">
                 <div class="card">
                   <div class="card-image d-flex-center">
                     <a href="#"
-                      ><img src="assets/img/products/apple.jpg" alt="apple"
+                      ><img src="assets/img/products/tv2.jpg" alt="apple"
                     /></a>
                   </div>
                   <div class="card-main">
                     <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
+                      <a href="#"><h3>Televize</h3></a>
                     </div>
                     <div class="card-main-describtion">
                       <p>
@@ -98,17 +96,12 @@
                         Obcaecati nisi rem, asperiores provident quisquam aliquam.
                       </p>
                     </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
                   </div>
                 </div>
               </div>
             </li>
             <!--2------------------------------>
             <li class="item-a">
-              <!--slider-box-->
               <div class="col">
                 <div class="card">
                   <div class="card-image d-flex-center">
@@ -118,7 +111,7 @@
                   </div>
                   <div class="card-main">
                     <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
+                      <a href="#"><h3>Spotřebiče</h3></a>
                     </div>
                     <div class="card-main-describtion">
                       <p>
@@ -126,10 +119,6 @@
                         Obcaecati nisi rem, asperiores provident quisquam aliquam.
                       </p>
                     </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
                   </div>
                 </div>
               </div>
@@ -145,7 +134,7 @@
                   </div>
                   <div class="card-main">
                     <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
+                      <a href="#"><h3>Mobilní telefony</h3></a>
                     </div>
                     <div class="card-main-describtion">
                       <p>
@@ -153,10 +142,6 @@
                         Obcaecati nisi rem, asperiores provident quisquam aliquam.
                       </p>
                     </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
                   </div>
                 </div>
               </div>
@@ -172,7 +157,7 @@
                   </div>
                   <div class="card-main">
                     <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
+                      <a href="#"><h3>Příslušenství</h3></a>
                     </div>
                     <div class="card-main-describtion">
                       <p>
@@ -180,72 +165,455 @@
                         Obcaecati nisi rem, asperiores provident quisquam aliquam.
                       </p>
                     </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
                   </div>
                 </div>
               </div>
             </li>
-            <!--5------------------------------>
-            <li class="item-a">
-              <div class="col">
-                <div class="card">
-                  <div class="card-image d-flex-center">
-                    <a href="#"
-                      ><img src="assets/img/products/apple.jpg" alt="apple"
-                    /></a>
-                  </div>
-                  <div class="card-main">
-                    <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
-                    </div>
-                    <div class="card-main-describtion">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati nisi rem, asperiores provident quisquam aliquam.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!--6------------------------------>
-            <li class="item-a">
-              <div class="col">
-                <div class="card">
-                  <div class="card-image d-flex-center">
-                    <a href="#"
-                      ><img src="assets/img/products/apple.jpg" alt="apple"
-                    /></a>
-                  </div>
-                  <div class="card-main">
-                    <div class="card-main-title">
-                      <a href="#"><h3>produkt1</h3></a>
-                    </div>
-                    <div class="card-main-describtion">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati nisi rem, asperiores provident quisquam aliquam.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-price t-align-center">
-                    <p>Cena bez DPH: 1334kč</p>
-                    <p>Cena s DPH: 1403kč</p>
-                  </div>
-                </div>
-              </div>
-            
           </ul>      
         </div>
+      </div>
       </section>
-      <!-- End Products -->
+      <!-- End Categories -->
+     <!-- Top Products -->
+     <section class="products" id="products">
+      <div class="container">
+        <h2>Top produkty</h2>
+        <div class="row">
+          <!-- Prodcut slider === -->
+          <ul id="autoWidth2" class="cs-hidden">
+            <!-- 1====== -->
+            <li class="item-a">
+              <div class="col">
+                <div class="card">
+                  <div class="card-image d-flex-center">
+                    <a href="produkt.html"
+                      ><img src="assets/img/products/apple.jpg" alt="apple"
+                    /></a>
+                  </div>
+                  <div class="card-main">
+                    <div class="card-main-title">
+                      <a href="produkt.html"><h3>produkt1</h3></a>
+                    </div>
+                    <div class="card-main-describtion">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Obcaecati nisi rem, asperiores provident
+                        quisquam aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-price t-align-center">
+                    <p>Cena bez DPH: 1334kč</p>
+                    <p>Cena s DPH: 1403kč</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 2====== -->
+            <li class="item-a">
+              <div class="col">
+                <div class="card">
+                  <div class="card-image d-flex-center">
+                    <a href="#"
+                      ><img src="assets/img/products/tv2.jpg" alt="tv2"
+                    /></a>
+                  </div>
+                  <div class="card-main">
+                    <div class="card-main-title">
+                      <a href="#"
+                        ><h3>
+                          produkt2 hoooooooooodně strašně moc dlouhej bla
+                          nadpis blaaala bla blaa bla bla
+                        </h3></a
+                      >
+                    </div>
+                    <div class="card-main-describtion">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Obcaecati nisi rem, asperiores provident
+                        quisquam aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-price t-align-center">
+                    <p>Cena bez DPH: 1034kč</p>
+                    <p>Cena s DPH: 1222kč</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 3====== -->
+            <li class="item-a">
+              <div class="col">
+                <div class="card">
+                  <div class="card-image d-flex-center">
+                    <a href="#"
+                      ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                    /></a>
+                  </div>
+                  <div class="card-main">
+                    <div class="card-main-title">
+                      <a href="#"><h3>produkt3</h3></a>
+                    </div>
+                    <div class="card-main-describtion">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Obcaecati nisi rem, asperiores provident
+                        quisquam aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-price t-align-center">
+                    <p>Cena bez DPH: 1335kč</p>
+                    <p>Cena s DPH: 1405kč</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 4========= -->
+            <li class="item-a">
+              <div class="col">
+                <div class="card">
+                  <div class="card-image d-flex-center">
+                    <a href="#"
+                      ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                    /></a>
+                  </div>
+                  <div class="card-main">
+                    <div class="card-main-title">
+                      <a href="#"><h3>produkt3</h3></a>
+                    </div>
+                    <div class="card-main-describtion">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Obcaecati nisi rem, asperiores provident
+                        quisquam aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-price t-align-center">
+                    <p>Cena bez DPH: 1335kč</p>
+                    <p>Cena s DPH: 1405kč</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </section>
+    <!-- End Top Products -->
+    <!-- All Products -->
+    <section id="allProducts">
+      <div class="container">
+        <h2>Doporučené produkty</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-image d-flex-center">
+                <a href="#"
+                  ><img src="assets/img/products/tv3.jpg " alt="tv3"
+                /></a>
+              </div>
+              <div class="card-main">
+                <div class="card-main-title">
+                  <a href="#"><h3>produkt3</h3></a>
+                </div>
+                <div class="card-main-describtion">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Obcaecati nisi rem, asperiores provident
+                    quisquam aliquam.
+                  </p>
+                </div>
+              </div>
+              <div class="card-price t-align-center">
+                <p>Cena bez DPH: 1335kč</p>
+                <p>Cena s DPH: 1405kč</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     </main>
     <!-- End Main -->
 
@@ -284,18 +652,18 @@
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container">
         <form role="search" class="search-form form">
-          <label>
-            <span class="screen-reader-text">Co chcete hledat...</span>
-            <input
-              type="search"
-              class="search-field"
-              placeholder="Začněte hledat..."
-              name="search"
-              title=""
-            />
-          </label>
-          <button type="submit"><i class="material-icons">search</i></button>
-        </form>
+          <label for="search">Co chcete hledat...</label>
+          <input
+            type="search"
+            id="search"
+            class="search-field"
+            placeholder="Začněte hledat..."
+            name="search"
+            title=""
+          />
+        
+        <button type="submit"><i class="material-icons">search</i></button>
+      </form>
         <button class="modal-close modal-exit">
           <i class="material-icons">close</i>
         </button>
@@ -305,7 +673,6 @@
     <!-- JS Scripts -->
     <script src="assets/js/burger.js"></script>
     <script src="assets/js/modal.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/cardSlider.js"></script>
   </body>

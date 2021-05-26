@@ -10,6 +10,3 @@ burgerMenu.addEventListener("click", function () {
 
 let slideIndex = 1;
 
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-});

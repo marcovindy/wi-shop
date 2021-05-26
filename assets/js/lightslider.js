@@ -4,7 +4,7 @@
         item: 3,
         autoWidth: false,
         slideMove: 1,
-        slideMargin: 10,
+        slideMargin: 0,
         addClass: '',
         mode: 'slide',
         useCSS: true,

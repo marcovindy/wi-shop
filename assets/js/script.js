@@ -1,3 +1,6 @@
+window.addEventListener("load",function() {
+  showSlides(slideIndex);
+});
 
 
 const prevSlider = document.querySelector(".prev.slider-btn");

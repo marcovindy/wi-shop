@@ -155,7 +155,6 @@
     cursor: pointer;
     display: block;
     top: 50%;
-    background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -173,6 +172,7 @@
 .lSAction > a:hover {
     opacity: 1;
 }
+
 .lSAction > .lSPrev {
     background-position: 0 0;
     border-radius: 2rem;
@@ -402,15 +402,11 @@
 
 @media only screen and(max-width: 1200px) {
 
-.lSAction > .lSPrev {
-    background-position: 0 0;
-    border-radius: 0rem 1rem 1rem 0rem;
-    left: 0;
-}
-.lSAction > .lSNext {
-    background-position: -32px 0;
-    border-radius: 1rem 0rem 0rem 1rem;
-    right: 0;
-}
+    .lSAction > .lSPrev {
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+    .lSAction > .lSNext {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
 }
 

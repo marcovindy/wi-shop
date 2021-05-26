@@ -8,6 +8,3 @@ burgerMenu.addEventListener("click", function () {
   burgerMenu.classList.toggle("active");
 });
 var slideIndex = 1;
-window.addEventListener("load", function () {
-  showSlides(slideIndex);
-});
