@@ -5,9 +5,13 @@
 #detail-main-section {
   margin-top: 4rem;
 }
-#detail-main-section .container .row > div {
-  width: 50%;
+#detail-main-section .container .row {
+  justify-content: space-between;
 }
+#detail-main-section .container .row > div {
+  width: 45%;
+}
+
 .detail-main-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -15,33 +19,73 @@
   max-width: 960px;
   text-align: center;
   margin: 0 auto;
-  grid-template-areas: "header header header" "main main main" "storedSection storedSection storedSection" "buySection buySection buySection" "guaranteeFooter favoriteFooter compareFooter";
+  grid-template-areas: "header header header" "main main aside" "storedSection buySection buySection" "guaranteeFooter favoriteFooter compareFooter";
 }
 .detail-main-info > div {
-  padding: 0 1rem;
+  padding: 1rem;
+  margin: auto 0;
+  padding: 0 auto;
 }
 .detail-main-info .title {
   grid-area: header;
 }
 .detail-main-info .description {
   grid-area: main;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 2.6rem;
+}
+.detail-main-info .more-info {
+  grid-area: aside;
+}
+.detail-main-info .more-info a:hover {
+  color: #7060ff;
 }
 .detail-main-info .stored {
   grid-area: storedSection;
 }
 .detail-main-info .buy {
   grid-area: buySection;
+  display: flex;
+  justify-content: flex-end;
+}
+.detail-main-info .buy button {
+  transition: transform 0.5s;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
+.detail-main-info .buy button i {
+  margin-right: 0.4rem;
 }
 .detail-main-info .guarantee {
   grid-area: guaranteeFooter;
+  border-right: #383838 solid;
+}
+.detail-main-info .guarantee a:hover {
+  color: #7060ff;
 }
 .detail-main-info .favorite {
   grid-area: favoriteFooter;
+  border-right: #383838 solid;
+}
+.detail-main-info .favorite a:hover {
+  color: #ff6060;
 }
 .detail-main-info .compare {
   grid-area: compareFooter;
 }
+.detail-main-info .compare a:hover {
+  color: #76ca89;
+}
 
+#detail-more-section {
+  margin-bottom: 1rem;
+}
 #detail-more-section .container {
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -94,6 +138,16 @@
 .detail-describtion h2 {
   text-align: center;
   width: 100%;
+}
+
+/*
+------ Slider ------
+*/
+#detail-main-section .galery ul {
+  height: auto;
+}
+#detail-main-section .galery ul li img {
+  width: 100% !important;
 }
 
 /*
@@ -154,7 +208,6 @@
 }
 .detail-review form {
   display: flex;
-  padding: 2rem 0;
   flex-direction: column;
   max-width: 1000px;
 }
@@ -164,11 +217,20 @@
   flex-direction: column;
   padding: 1rem;
 }
+.detail-review form .form-group label {
+  padding: 1rem;
+}
 .detail-review form .form-group input {
   background: #f2f2f2;
   padding: 1rem;
   border: none;
   border-radius: 1rem;
+}
+.detail-review form .form-group input[type=email] {
+  width: 25rem;
+}
+.detail-review form .form-group input[type=text] {
+  width: 25rem;
 }
 .detail-review form .form-group textarea {
   background: #f2f2f2;
@@ -177,11 +239,7 @@
   border-radius: 1rem;
 }
 .detail-review form .form-group button {
-  background-color: #383838;
-  color: white;
-  padding: 1rem;
-  border: none;
-  border-radius: 1rem;
+  transition: transform 0.5s;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -192,8 +250,8 @@
     width: 100%;
   }
   #detail-main-section .container .row .detail-main-info {
-    padding: 2em 0;
-    /* NEW */
+    padding: 0;
+    margin-bottom: 1rem;
   }
 
   #detail-more-section {
@@ -219,7 +277,16 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  .detail-main-info > div {
+  #detail-main-section .container .row {
+    flex-direction: column-reverse;
+  }
+  #detail-main-section .container .row > div {
+    width: 100%;
+  }
+  #detail-main-section .container .row .galery {
+    width: 100%;
+  }
+  #detail-main-section .container .row .detail-main-info {
     padding: 0;
   }
 
@@ -237,5 +304,15 @@
   .detail-media-video iframe {
     width: 100%;
     height: auto;
+  }
+
+  /*
+  ------ Review ------
+  */
+  .detail-review form .form-group input[type=email] {
+    width: 15rem;
+  }
+  .detail-review form .form-group input[type=text] {
+    width: 15rem;
   }
 }

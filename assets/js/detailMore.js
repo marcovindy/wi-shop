@@ -2,6 +2,7 @@ const openD = document.querySelector("#open-detail-describtion");
 const openP = document.querySelector("#open-detail-param");
 const openM = document.querySelector("#open-detail-media");
 const openR = document.querySelector("#open-detail-review");
+const scrollD = document.querySelector(".more-info");
 
 openD.addEventListener("click", function () {
     openDe();
@@ -16,6 +17,11 @@ openM.addEventListener("click", function () {
 openR.addEventListener("click", function () {
     openRe();
 });
+
+scrollD.addEventListener("click", function () {
+    moreInfo();
+});
+
 
 function openDe(){
     let x = document.querySelector(".detail-describtion");
@@ -80,4 +86,21 @@ function openRe(){
     openM.classList.remove("active");
     openR.classList.add("active");
     
+}
+
+function moreInfo(){
+    let x = document.querySelector(".detail-describtion");
+    x.classList.remove("hide");
+    let y = document.querySelector(".detail-param");
+    y.classList.add("hide");
+    let z = document.querySelector(".detail-media");
+    z.classList.add("hide");
+    let h = document.querySelector(".detail-review");
+    h.classList.add("hide");
+
+    openD.classList.add("active");
+    openP.classList.remove("active");
+    openM.classList.remove("active");
+    openR.classList.remove("active");
+
 }

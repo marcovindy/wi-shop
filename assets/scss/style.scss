@@ -60,7 +60,22 @@ section {
   }
 }
 
+.btn-classic{
+  background-color: #383838;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+    }
+}
 
+.w-25rem{
+  width: 25rem;
+}
 
 .fixed-nav {
   position: fixed !important;
@@ -420,8 +435,8 @@ main {
           }
 
           &:hover {
-            transform: scale(1.05);
-            -webkit-transform: scale(1.05);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
             .card-image {
               opacity: 1;
             }
@@ -464,6 +479,7 @@ main {
 --------------------------------------------------------------*/
 
 .categories {
+  padding-top: 3.7rem;
   .row {
     justify-content: space-around;
     position: relative;
@@ -520,7 +536,6 @@ main {
           }
           &-describtion {
             overflow: hidden;
-            color: #32325d;
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 2;

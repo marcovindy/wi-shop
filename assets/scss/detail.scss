@@ -1,15 +1,14 @@
-.container-d{
-    max-width: 800px;
+.container-d {
+  max-width: 800px;
 }
 
 #detail-main-section {
   margin-top: 4rem;
   .container {
     .row {
+        justify-content: space-between;
       & > div {
-        width: 50%;
-      }
-      .galery {
+        width: 45%;
       }
     }
   }
@@ -24,37 +23,79 @@
   margin: 0 auto;
   grid-template-areas:
     "header header header"
-    "main main main"
-    "storedSection storedSection storedSection"
-    "buySection buySection buySection"
+    "main main aside"
+    "storedSection buySection buySection"
     "guaranteeFooter favoriteFooter compareFooter";
   & > div {
-    padding: 0 1rem;
+    padding: 1rem;
+    margin: auto 0;
+    padding: 0 auto;
   }
   .title {
     grid-area: header;
   }
   .description {
     grid-area: main;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 2.6rem;
+  }
+  .more-info {
+    grid-area: aside;
+    a{
+        &:hover{
+            color: #7060ff;
+    
+        }
+
+    }
   }
   .stored {
     grid-area: storedSection;
   }
   .buy {
     grid-area: buySection;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      transition: transform 0.5s;
+      width: 140px;
+      display: flex;
+      justify-content: center;
+      i {
+        margin-right: 0.4rem;
+      }
+    }
   }
   .guarantee {
     grid-area: guaranteeFooter;
+    border-right: #383838 solid;
+    a:hover {
+      color: #7060ff;
+    }
   }
   .favorite {
     grid-area: favoriteFooter;
+    border-right: #383838 solid;
+    a:hover {
+      color: #ff6060;
+    }
   }
   .compare {
     grid-area: compareFooter;
+    a:hover {
+      color: #76ca89;
+    }
   }
 }
 
 #detail-more-section {
+  margin-bottom: 1rem;
   .container {
     -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
     box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
@@ -104,7 +145,27 @@
 
 .detail-describtion {
   padding: 0 2rem;
-  h2{text-align: center;width: 100%;}
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*
+------ Slider ------
+*/
+
+#detail-main-section {
+  .galery {
+    ul {
+      height: auto;
+      li {
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+  }
 }
 
 /*
@@ -168,7 +229,6 @@
   flex-direction: column;
   form {
     display: flex;
-    padding: 2rem 0;
     flex-direction: column;
     max-width: 1000px;
     .form-group {
@@ -176,11 +236,21 @@
       justify-content: center;
       flex-direction: column;
       padding: 1rem;
+      label{
+          padding: 1rem;
+      }
       input {
         background: #f2f2f2;
         padding: 1rem;
         border: none;
         border-radius: 1rem;
+
+        &[type="email"] {
+          width: 25rem;
+        }
+        &[type="text"] {
+          width: 25rem;
+        }
       }
       textarea {
         background: #f2f2f2;
@@ -189,11 +259,7 @@
         border-radius: 1rem;
       }
       button {
-        background-color: #383838;
-        color: white;
-        padding: 1rem;
-        border: none;
-        border-radius: 1rem;
+        transition: transform 0.5s;
       }
     }
   }
@@ -204,11 +270,13 @@
     .container {
       .row {
         flex-direction: column-reverse;
+
         .galery {
           width: 100%;
         }
         .detail-main-info {
-          padding: 2em 0; /* NEW */
+          padding: 0;
+          margin-bottom:1rem;
         }
       }
     }
@@ -244,15 +312,29 @@
       }
     }
   }
+
+
+
+
 }
 
+
 @media only screen and(max-width: 640px) {
-  .detail-main-info {
-    
-    & > div {
-      padding: 0;
+  #detail-main-section {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        & > div {
+          width: 100%;
+        }
+        .galery {
+          width: 100%;
+        }
+        .detail-main-info {
+          padding: 0;
+        }
+      }
     }
-   
   }
 
   #detail-more-section {
@@ -276,6 +358,27 @@
       iframe {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+
+  /*
+------ Review ------
+*/
+
+  .detail-review {
+    form {
+      .form-group {
+        input {
+          &[type="email"] {
+            width: 15rem;
+          }
+          &[type="text"] {
+            width: 15rem;
+          }
+        }
+        textarea {
+        }
       }
     }
   }
